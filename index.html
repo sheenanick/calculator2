@@ -11,6 +11,31 @@
   <body>
     <div class="container">
       <h1>Calculator</h1>
+      <div class="calculator">
+        <form>
+          <div class="row">
+            <div class="col-xs-4">
+              <label for="number1">1st Number:</label>
+              <input id="number1" class="form-control" type="number">
+            </div>
+            <div class="col-xs-4">
+              <label for="number2">2nd Number:</label>
+              <input id="number2" class="form-control" type="number">
+            </div>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col-xs-8">
+            <button type="submit" class="btn btn-lg" id="add">+</button>
+            <button type="submit" class="btn btn-lg" id="subtract">-</button>
+            <button type="submit" class="btn btn-lg" id="multiply">*</button>
+            <button type="submit" class="btn btn-lg" id="divide">/</button>
+          </div>
+        </div>
+        <div id="output">
+          <p>= <span class="result"></span></p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
