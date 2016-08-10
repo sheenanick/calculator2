@@ -11,30 +11,97 @@
   <body>
     <div class="container">
       <h1>Calculator</h1>
-      <div class="calculator">
+      <div class="calculator" id="add">
         <form>
           <div class="row">
             <div class="col-xs-4">
-              <label for="number1">1st Number:</label>
-              <input id="number1" class="form-control" type="number">
+              <label for="add1">Enter a #:</label>
+              <input id="add1" class="form-control" type="number">
+            </div>
+            <div class="col-xs-1 operator">
+              <p class="glyphicon glyphicon-plus"></p>
             </div>
             <div class="col-xs-4">
-              <label for="number2">2nd Number:</label>
-              <input id="number2" class="form-control" type="number">
+              <label for="add2">Enter another #:</label>
+              <input id="add2" class="form-control" type="number">
+            </div>
+            <div class="col-xs-1 button">
+              <button type="submit" class="btn btn-lg">=</button>
+            </div>
+            <div class="col-xs-1 output" id="output1">
+              <p class="result" id="add-result"></p>
             </div>
           </div>
         </form>
-        <div class="row">
-          <div class="col-xs-8">
-            <button type="submit" class="btn btn-lg" id="add">+</button>
-            <button type="submit" class="btn btn-lg" id="subtract">-</button>
-            <button type="submit" class="btn btn-lg" id="multiply">*</button>
-            <button type="submit" class="btn btn-lg" id="divide">/</button>
+      </div>
+      <div class="calculator" id="subtract">
+        <form>
+          <div class="row">
+            <div class="col-xs-4">
+              <label for="subtract1">Enter a #:</label>
+              <input id="subtract1" class="form-control" type="number">
+            </div>
+            <div class="col-xs-1 operator">
+              <p class="glyphicon glyphicon-minus"></p>
+            </div>
+            <div class="col-xs-4">
+              <label for="subtract2">Enter another #:</label>
+              <input id="subtract2" class="form-control" type="number">
+            </div>
+            <div class="col-xs-1 button">
+              <button type="submit" class="btn btn-lg">=</button>
+            </div>
+            <div class="col-xs-1 output" id="output2">
+              <p class="result" id="subtract-result"></p>
+            </div>
           </div>
-        </div>
-        <div id="output">
-          <p>= <span class="result"></span></p>
-        </div>
+        </form>
+      </div>
+      <div class="calculator" id="multiply">
+        <form>
+          <div class="row">
+            <div class="col-xs-4">
+              <label for="multiply1">Enter a #:</label>
+              <input id="multiply1" class="form-control" type="number">
+            </div>
+            <div class="col-xs-1 operator">
+              <p class="glyphicon glyphicon-asterisk"></p>
+            </div>
+            <div class="col-xs-4">
+              <label for="multiply2">Enter another #:</label>
+              <input id="multiply2" class="form-control" type="number">
+            </div>
+            <div class="col-xs-1 button">
+              <button type="submit" class="btn btn-lg">=</button>
+            </div>
+            <div class="col-xs-1 output" id="output3">
+              <p class="result" id="multiply-result"></p>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="calculator" id="divide">
+        <form>
+          <div class="row">
+            <div class="col-xs-4">
+              <label for="divide1">Enter a #:</label>
+              <input id="divide1" class="form-control" type="number">
+            </div>
+            <div class="col-xs-1 operator">
+              <img src="img/glyphicons-divide.png">
+            </div>
+            <div class="col-xs-4">
+              <label for="divide2">Enter another #:</label>
+              <input id="divide2" class="form-control" type="number">
+            </div>
+            <div class="col-xs-1 button">
+              <button type="submit" class="btn btn-lg">=</button>
+            </div>
+            <div class="col-xs-1 output" id="output4">
+              <p class="result" id="divide-result"></p>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </body>
